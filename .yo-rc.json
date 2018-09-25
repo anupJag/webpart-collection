@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": false,
+    "environment": "spo",
+    "version": "1.5.1",
+    "libraryName": "mars-spfx-solution",
+    "libraryId": "e00d1fbd-0b58-4671-99cf-d527e82a7608",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

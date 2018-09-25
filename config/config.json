@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "site-details-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/siteDetailsWp/SiteDetailsWpWebPart.js",
+          "manifest": "./src/webparts/siteDetailsWp/SiteDetailsWpWebPart.manifest.json"
+        }
+      ]
+    },
+    "tiles-view-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tilesViewWebPart/TilesViewWebPartWebPart.js",
+          "manifest": "./src/webparts/tilesViewWebPart/TilesViewWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "accordion-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/accordionWebPart/AccordionWebPartWebPart.js",
+          "manifest": "./src/webparts/accordionWebPart/AccordionWebPartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SiteDetailsWpWebPartStrings": "lib/webparts/siteDetailsWp/loc/{locale}.js",
+    "TilesViewWebPartWebPartStrings": "lib/webparts/tilesViewWebPart/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "AccordionWebPartWebPartStrings": "lib/webparts/accordionWebPart/loc/{locale}.js"
+  }
+}

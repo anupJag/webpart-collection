@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "fd15fcd8-7c56-4fde-99e0-74460d1b0f25",
+  "alias": "TilesViewWebPartWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "title": { "default": "Tiles View WebPart" },
+    "description": { "default": "Show tiles the way you need to be rendered on the screen" },
+    "officeFabricIconFontName": "Tiles",
+    "properties": {
+      "height": 167
+    }
+  }]
+}

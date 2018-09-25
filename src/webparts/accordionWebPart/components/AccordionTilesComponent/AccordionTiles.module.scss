@@ -1,0 +1,94 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+@font-face
+{
+    font-family: 'Dosis-regular';
+    src: url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-regular.eot');
+    src: url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-regular.eot?#iefix') format('embedded-opentype'), url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-regular.woff2') format('woff2'), url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-regular.woff') format('woof'), url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-regular.ttf') format('truetype'), url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-regular.svg?#Dosis-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+}
+@font-face
+{
+    font-family: 'Dosis-700';
+    src: url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-700.eot');
+    src: url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-700.eot?#iefix') format('embedded-opentype'), url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-700.woff2') format('woff2'), url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-700.woff') format('woff'), url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-700.ttf') format('truetype'), url('/sites/MarkChristianson/SiteAssets/Font/Dosis/Dosis-700.svg?#Dosis-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+}
+@font-face
+{
+    font-family: 'SegoeUI';
+    src: url('/sites/MarkChristianson/SiteAssets/Font/SegoeUI/SegoeUI.eot?#iefix') format('embedded-opentype'),url(/sites/MarkChristianson/SiteAssets/Font/SegoeUI/SegoeUI.woff) format('woff'),url(/sites/MarkChristianson/SiteAssets/Font/SegoeUI/SegoeUI.ttf) format('truetype'),url('/sites/MarkChristianson/SiteAssets/Font/SegoeUI/SegoeUI.svg#SegoeUI') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.accordion {
+    font-family: 'Dosis-regular', 'Dosis-700', 'SegoeUI', 'Segoe UI' !important;
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5em;
+    font-weight: $ms-font-weight-regular;
+    transition: 0.5s ease;
+    height: 50px;
+    line-height: 15px;
+
+    &::after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        padding-bottom: 8px;
+    }
+
+}
+
+.panel {
+    font-family: 'Dosis-regular', 'Dosis-700', 'SegoeUI', 'Segoe UI' !important;
+    font-size: 1.5em;
+    font-weight: $ms-font-weight-regular;
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.active{
+    
+    padding-bottom: 10px;
+    
+    
+    &::after {
+        content: "\2212";
+    }
+}
+.accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    
+}
+.active:after {
+    content: "\2212";
+}
+.outerDiv{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    border: 1px 1px 0px 1px solid #ccc;
+}
+
+.outerDivVisited{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

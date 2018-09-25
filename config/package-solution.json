@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "mars-spfx-solution-client-side-solution",
+    "id": "e00d1fbd-0b58-4671-99cf-d527e82a7608",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/mars-spfx-solution.sppkg"
+  }
+}
